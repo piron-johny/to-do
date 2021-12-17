@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-color: #c9c2b2;
   display: flex;
   padding-top: 5rem;
   justify-content: center;
@@ -16,14 +16,14 @@ body {
 
 .row {
   display: flex;
-  width: 600px;
+  width: 1000px;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
 .col-header {
-  width: 150px;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  width: 300px;
+  box-shadow: 4px 4px 9px rgb(122 122 122 / 36%);
   border-radius: 20px;
   padding: 0.8rem 1rem;
   color: #fff;
@@ -31,10 +31,10 @@ body {
 }
 
 .item {
-  width: 150px;
-  height: 66px;
+  width: 300px;
+  height: auto;
   border: 1px solid #eee;
-  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  box-shadow: 4px 4px 9px rgb(122 122 122 / 36%);
   border-radius: 20px;
   background: #f7f6f7;
   padding: 0.8rem 1rem;
@@ -47,33 +47,25 @@ body {
   cursor: grabbing;
 }
 
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .placeholder {
-  width: 150px;
-  height: 66px;
+  width: 300px;
+  min-height: 50px;
 }
 
 .start {
-  background: linear-gradient(
-    0deg,
-    rgba(72, 124, 125, 1) 0%,
-    rgba(48, 36, 108, 1) 100%
-  );
+  background: #d7c770;
 }
 
 .progress {
-  background: linear-gradient(
-    0deg,
-    rgba(85, 122, 84, 1) 0%,
-    rgba(36, 80, 108, 1) 100%
-  );
+  background: #86534e;
 }
 
 .done {
-  background: linear-gradient(
-    0deg,
-    rgba(122, 85, 84, 1) 0%,
-    rgba(36, 80, 108, 1) 100%
-  );
+  background: #af323b;
 }
 
 .hold {
@@ -85,6 +77,6 @@ body {
 }
 
 .hovered {
-  box-shadow: 0px 0px 15px #797878 inset;
+  box-shadow: 0px 0px 35px #dbdbdb inset;
   border-radius: 20px;
 }
